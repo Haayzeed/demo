@@ -12,7 +12,7 @@
     <button @click.prevent="getColor" content="blue">blue</button>
 
     <div class="content">
-    <div v-for="item in filterProducts" :key="item.id" :id="item.id" class="shape">
+    <div v-for="item in filterItems" :key="item.id" :id="item.id" class="shape">
         <div > {{item.shape}}</div>
         <div> <img :src="'../assets' + item.image"> {{item.color}} </div>
     </div>
@@ -37,13 +37,13 @@ export default {
     }
   },
   computed: {
-    filterProducts: function(){
+    filterItems: function(){
       return this.filterByShape(this.filterByColor(this.items))
     }
   },
   methods: {
     getShape(e) {
-      e.target.classList.toggle('active')
+      e.target.classList.toggle('shape')
       let shapes = e.target.getAttribute('content')
       let index = this.query.indexOf(shapes)
       if (index >= 0) {
@@ -55,7 +55,7 @@ export default {
       }
     },  
     getColor(e) {
-      e.target.classList.toggle('active')
+      e.target.classList.toggle('color')
       let color = e.target.getAttribute('content')
       let index = this.colorq.indexOf(color)
       if (index >= 0) {
@@ -77,10 +77,22 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+.home {
+  button {
+    &.shape {
+      background: black;
+      color: white;
+    }
+    &.color {
+      border: 2px solid black;
+    }
+  }
+}
   .content {
     padding: 50px;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
+    
   }
 </style>
