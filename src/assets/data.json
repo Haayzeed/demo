@@ -1,0 +1,194 @@
+[
+  {
+    "id": 32,
+    "shape": "round",
+    "color": "blue",
+    "image": "svgs/circles/blue-circle.svg"
+  },
+  {
+    "id": 31,
+    "shape": "round",
+    "color": "blue",
+    "image": "svgs/circles/blue-circle.svg"
+  },
+  {
+    "id": 1,
+    "shape": "round",
+    "color": "blue",
+    "image": "svgs/circles/blue-circle.svg"
+  },
+  {
+    "id": 2,
+    "shape": "round",
+    "color": "red",
+    "image": "svgs/circles/red-circle.svg"
+  },
+  {
+    "id": 3,
+    "shape": "round",
+    "color": "blue",
+    "image": "svgs/circles/green-circle.svg"
+  },
+  {
+    "id": 4,
+    "shape": "round",
+    "color": "blue",
+    "image": "svgs/circles/yellow-circle.svg"
+  },
+  {
+    "id": 5,
+    "shape": "round",
+    "color": "blue",
+    "image": "svgs/circles/teal-circle.svg"
+  },
+  {
+    "id": 6,
+    "shape": "round",
+    "color": "blue",
+    "image": "svgs/circles/gray-circle.svg"
+  },
+  {
+    "id": 7,
+    "shape": "ellipse",
+    "color": "blue",
+    "image": "svgs/ellipses/blue-ellipse.svg"
+  },
+  {
+    "id": 8,
+    "shape": "ellipse",
+    "color": "red",
+    "image": "svgs/ellipses/red-ellipse.svg"
+  },
+  {
+    "id": 9,
+    "shape": "ellipse",
+    "color": "green",
+    "image": "svgs/ellipses/green-ellipse.svg"
+  },
+  {
+    "id": 10,
+    "shape": "ellipse",
+    "color": "yellow",
+    "image": "svgs/ellipses/yellow-ellipse.svg"
+  },
+  {
+    "id": 11,
+    "shape": "ellipse",
+    "color": "teal",
+    "image": "svgs/ellipses/teal-ellipse.svg"
+  },
+  {
+    "id": 12,
+    "shape": "ellipse",
+    "color": "gray",
+    "image": "svgs/ellipses/gray-ellipse.svg"
+  },
+  {
+    "id": 13,
+    "shape": "rectangle",
+    "color": "blue",
+    "image": "svgs/rectangles/blue-rectangle.svg"
+  },
+  {
+    "id": 14,
+    "shape": "rectangle",
+    "color": "red",
+    "image": "svgs/rectangles/red-rectangle.svg"
+  },
+  {
+    "id": 15,
+    "shape": "rectangle",
+    "color": "green",
+    "image": "svgs/rectangles/green-rectangle.svg"
+  },
+  {
+    "id": 16,
+    "shape": "rectangle",
+    "color": "yellow",
+    "image": "svgs/rectangles/yellow-rectangle.svg"
+  },
+  {
+    "id": 17,
+    "shape": "rectangle",
+    "color": "teal",
+    "image": "svgs/rectangles/teal-rectangle.svg"
+  },
+  {
+    "id": 18,
+    "shape": "rectangle",
+    "color": "gray",
+    "image": "svgs/rectangles/gray-rectangle.svg"
+  },
+  {
+    "id": 19,
+    "shape": "squares",
+    "color": "blue",
+    "image": "svgs/squares/blue-square.svg"
+  },
+  {
+    "id": 20,
+    "shape": "squares",
+    "color": "red",
+    "image": "svgs/squares/red-square.svg"
+  },
+  {
+    "id": 21,
+    "shape": "squares",
+    "color": "green",
+    "image": "svgs/squares/green-square.svg"
+  },
+  {
+    "id": 22,
+    "shape": "squares",
+    "color": "yellow",
+    "image": "svgs/squares/yellow-square.svg"
+  },
+  {
+    "id": 23,
+    "shape": "squares",
+    "color": "teal",
+    "image": "svgs/squares/teal-square.svg"
+  },
+  {
+    "id": 24,
+    "shape": "squares",
+    "color": "gray",
+    "image": "svgs/squares/gray-square.svg"
+  },
+  {
+    "id": 25,
+    "shape": "triangles",
+    "color": "blue",
+    "image": "svgs/triangles/blue-triangle.svg"
+  },
+  {
+    "id": 26,
+    "shape": "triangles",
+    "color": "green",
+    "image": "svgs/triangles/green-triangle.svg"
+  },
+  {
+    "id": 27,
+    "shape": "triangles",
+    "color": "red",
+    "image": "svgs/triangles/red-triangle.svg"
+  },
+  {
+    "id": 28,
+    "shape": "triangles",
+    "color": "yellow",
+    "image": "svgs/triangles/yellow-triangle.svg"
+  },
+  {
+    "id": 29,
+    "shape": "triangles",
+    "color": "teal",
+    "image": "svgs/triangles/teal-triangle.svg"
+  },
+  {
+    "id": 30,
+    "shape": "triangles",
+    "color": "gray",
+    "image": "svgs/triangles/gray-triangle.svg"
+  }
+]
