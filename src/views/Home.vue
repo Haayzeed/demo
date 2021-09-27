@@ -14,7 +14,7 @@
     <div class="content">
     <div v-for="item in filterItems" :key="item.id" :id="item.id" class="shape">
         <div > {{item.shape}}</div>
-        <div> <img :src="'../assets' + item.image"> {{item.color}} </div>
+        <div> <img :src="'@/assets/' + item.image"> {{item.color}} </div>
     </div>
     </div>
   </div>
