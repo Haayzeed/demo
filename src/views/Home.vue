@@ -12,15 +12,17 @@
     <button @click.prevent="getColor" content="blue">blue</button>
 
     <div class="content">
-    <div v-for="item in filterItems" :key="item.id" :id="item.id" class="shape">
+    <div v-for="(item) in filterItems | filterItemss" :key="item.id" :id="item.id" class="shape">
         <div > {{item.shape}}</div>
         <div> <img :src="'@/assets/' + item.image"> {{item.color}} </div>
     </div>
     </div>
+    {{filterContent}}
   </div>
 </template>
 
 <script>
+import axios from 'axios'
 import items from '@/assets/data.json'
 export default {
   name: 'Home',
@@ -33,13 +35,27 @@ export default {
       shape: '',
       color: '',
       query: [],
-      colorq: []
+      colorq: [],
+      content: [],
+      url: process.env.VUE_APP_URL
     }
   },
   computed: {
     filterItems: function(){
-      return this.filterByShape(this.filterByColor(this.items))
+      return this.filterByShape(this.items)
+    },
+    filterItemss: function(){
+      return this.filterByColor(this.items)
+    },
+    filterContent: function() {
+      var contents = this.content
+      var newData = []
+       for(let i=0; i < contents.length; i++){
+        newData.push(contents[i].title)
+      }
+      return newData;
     }
+
   },
   methods: {
     getShape(e) {
@@ -73,6 +89,19 @@ export default {
     filterByColor: function(items) {
       return items.filter(item => !item.color.indexOf(this.colorq))
     },
+
+    getContent() {
+      
+      axios.get(process.env.VUE_APP_URL).then(response => {
+        this.content = response.data
+        console.log(this.content)
+      })
+    }
+  },
+  mounted() {
+    this.getContent()
+    console.log(process.env.VUE_APP_URL);
+    console.log(process.env.VUE_APP_KEY);
   }
 }
 </script>
